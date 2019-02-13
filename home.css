@@ -1,0 +1,99 @@
+
+/* standardized formats*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  /* So The font is easily changed relatively using rems*/
+  font-size: 62.5%; }
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  line-height: 1.6; }
+
+/* divide website into three main rows*/
+.container {
+  display: grid;
+  grid-template-rows: auto repeat(4, min-content);
+  position: relative; 
+  background-color: #1ce;}
+
+/* the navigartion bar*/
+.navigation {
+  background-image: linear-gradient(to left, #1ce ,white );
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+  /* 2 columns for the logo and menu */
+  display: grid;
+  grid-template-columns: max-content max-content;
+  padding: 2.7rem 0;
+  justify-content: space-around; 
+  text-shadow:  1px 1px #000;}
+
+  /* formatting the menu and interaction*/
+  .navigation .menu {
+    align-self: center;
+    margin-left: 9rem; }
+  .navigation a, .navigation a:link, .navigation a:visited {
+    color: white;
+    text-decoration: none;
+    padding: 1.5rem;
+    font-size: 1.2rem; }
+  .navigation a:hover {
+    color: #ff9700; }
+
+  /* formatting the logo into 2 columns (logo+ title)*/
+  /* logo icon to be implmented in the future*/
+.logo {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: min-content min-content; }
+  .logo__icon {
+    display: inline;
+    height: 5rem;
+    width: 10.5rem; }
+  .logo__text {
+    display: inline;
+    color: navy;
+    align-self: center;
+    font-size: 4rem; 
+    letter-spacing: 1.5px;
+}
+ /* formatting the background video container*/
+.bg-video {
+  position: absolute;
+  top: 9rem;
+  left: 0;
+  height: 80vh;
+  width: 100%;
+  z-index: -1;
+  opacity: .6;
+  overflow: hidden; }
+  /* formatting the video itself*/
+.bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
+
+/* formatting the footer */
+footer{
+    background-image: linear-gradient(to left, #1ce ,white );
+    height:auto;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
