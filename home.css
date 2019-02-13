@@ -56,15 +56,18 @@ body {
   /* logo icon to be implmented in the future*/
 .logo {
   background-color: transparent;
-  display: grid;
-  grid-template-columns: min-content min-content; }
+  /* display: grid; */
+  /* grid-template-columns: min-content min-content;  */
+  font-size: 3rem; 
+
+}
   .logo__icon {
     display: inline;
     height: 5rem;
     width: 10.5rem; }
   .logo__text {
     display: inline;
-    color: navy;
+    color: rgb(11, 11, 66);
     align-self: center;
     font-size: 4rem; 
     letter-spacing: 1.5px;
